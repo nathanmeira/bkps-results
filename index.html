@@ -21,7 +21,7 @@
     <!-- Video Pop Up Plugin -->
     <link rel="stylesheet" href="js/plugins/YouTube_PopUp-master/YouTubePopUp.css">
     <!-- PRELOADER -->
-    <link rel="stylesheet" href="css/preloader.css">
+<!--    <link rel="stylesheet" href="css/preloader.css">-->
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="imgs/favicon-32x32.png">
@@ -29,6 +29,11 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar">
+
+    <!-- ==============================================
+    PRELOADER
+    =============================================== -->
+
     <div class="preloader-holder">
         <div class="loading">
             <div class="finger finger-1">
@@ -57,10 +62,14 @@
         </div>
     </div>
 
+    <!-- ==============================================
+    HEADER
+    =============================================== -->
+
     <header id="home">
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="container">
-                <a class=" navbar-brand" href="index.html">BOOKEEPERS</a>
+                <a class=" navbar-brand" href="index2.html">BOOKEEPERS</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><i class="material-icons">menu</i></button>
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="nav navbar-nav ml-auto">
@@ -68,193 +77,150 @@
                             <a class="nav-link page-scroll" href="#home">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="platform.html">Soluções</a>
+                            <a class="nav-link page-scroll" href="#industria">Indústria</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="clientes.html">Clientes</a>
+                            <a class="nav-link page-scroll" href="#comercio">Comércio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link page-scroll" href="#servico">Serviço</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link page-scroll" href="#contact">Contato</a>
                         </li>
-                        <li>
-                            <a class="btn btn-primary" href="login.html">Login</a>
-                        </li>
                     </ul>
-
                 </div>
             </div>
         </nav>
     </header>
-
+        <!-- /// BANNER /// -->
         <div class="banner">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 offset-md-2">
                         <div class="caption">
-                            <h1>BOOKEEPERS</h1>
-                            <h3 class="sub">Soluções Tributárias Focadas em Resultados</h3>
-                            <br/>
-                            <img class="img-fluid mx-auto wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s" src="imgs/macbook.png" alt="macbook">
+                            <h1 class="section-title">Simulador</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-    <section id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".2s">
-                    <i data-vi="user" data-vi-size="70" data-vi-primary="#1992ec" data-vi-accent="#daeffd" data-vi-prop="#CEFAFF"></i>
-                    <h4>+ 1.800 clientes</h4>
-                </div>
-                <div class="col-md-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
-                    <i data-vi="newspaper" data-vi-size="70" data-vi-primary="#1992ec" data-vi-accent="#daeffd" data-vi-prop="#CEFAFF"></i>
-                    <h4>R$ 350 milhões de créditos apurados em 2017</h4>
-                </div>
-                <div class="col-md-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".6s">
-                    <i data-vi="website" data-vi-size="70" data-vi-primary="#1992ec" data-vi-accent="#daeffd" data-vi-prop="#CEFAFF"></i>
-                    <h4>100% de efetividade</h4>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- ==============================================
+    ABOUT 
+    =============================================== -->
 
-    <section id="services">
+    <section id="inicio">
         <div class="container">
-            <div class="row">
-                <div class="col-md-8 text-center mx-auto">
-                    <h2 class="section-title">Quem Somos:</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5" data-wow-duration=".5s" data-wow-delay=".2s">
-                    <p>
-                        A Bookeepers atua desde 1994 auxiliando empresas na correta aplicação da legislação tributária, visando a obtenção de economia tributária sustentável, racionalizando o recolhimento de tributos e eliminando potenciais riscos fiscais.
-                        Todas as soluções são desenvolvidas em estrita conformidade com as normas do Fisco, em esfera administrativa, sem necessidade de qualquer discussão ou medida judicial para seu aproveitamento.
-                    </p>
-                </div>
-                <div class="col-md-6" data-wow-duration=".5s" data-wow-delay=".5s">
-                    <div class="img-table">
-                        <img src="imgs/brands/logo1.png" class="img-fluid" alt="table">
+            <div class="row mx-auto">
+                <div class="col-md wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-xs-12 col-sm-3">
+                                <label>Setor:</label>
+                                <select class="form-control">
+                                    <option value="" disabled selected>Selecione o setor</option>
+                                    <option value="1">Indústria</option>
+                                    <option value="2">Comércio</option>
+                                    <option value="3">Serviço</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-3">
+                                <label>Segmento:</label>
+                                <select class="form-control">
+                                    <option value="" disabled selected>Selecione o segmento</option>
+                                    <option value="1">Agribusiness</option>
+                                    <option value="2">Construção Civil</option>
+                                    <option value="3">Health</option>
+                                    <option value="4">Educação</option>
+                                    <option value="5">Logística e Transportes</option>
+                                    <option value="6">Alimentos e Bebidas</option>
+                                    <option value="7">Serviços Financeiros</option>
+                                    <option value="8">Shoppings</option>
+                                </select>
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-3">
+                                <label>Faturamento Anual:</label>
+                                <input type="text" class="form-control text-center" id="inputName4" placeholder="R$ 100.000.000,00">
+                            </div>
+                            <div class="form-group col-xs-12 col-sm-3">
+                                <label>Folha de Pagamento Mensal:</label>
+                                <input type="text" class="form-control text-center" id="inputName4" placeholder="R$ 100.000,00">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-xs-12 col-sm-4 mx-auto mt-4">
+                                <h4>Média de Recuperação:</h4>
+                                <input type="text" class="form-control text-center" id="inputName4" placeholder="R$ 000.000.000,00">
+                            </div>
+                        </div>
+                    </form>
+                    <div class="mt-3">
+                        <p >* Previsão de recuperação de acordo com média do setor e segmento. Os valores podem variar de acordo com as características específicas de cada empresa.</p>
                     </div>
                 </div>
             </div>
-            <div class="row seconde">
-                <div class="col-md-7" data-wow-duration=".5s" data-wow-delay=".2s">
-                    <img src="imgs/business.jpg" class="img-fluid" alt="update">
-                </div>
-                <div class="col-md-5" data-wow-duration=".5s" data-wow-delay=".5s">
-                    <div class="caption">
-                        <h3>Rede de Associados</h3>
-                        <p>
-                            A Bookeepers está presente em todo o território nacional por meio de uma rede de associados,  capacitados periodicamente e que recebem todo o suporte comercial e técnico para levar para sua região soluções tributárias focadas na geração de resultados, com agilidade, responsabilidade e efetividade.
-                        </p>
-                        <button class="btn btn-secondary" type="button">Saiba Mais</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <section id="features">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 text-center mx-auto">
-                    <h2 class="section-title">Áreas de Atuação</h2>
-                    <p>Conheça nossos serviços e surpreenda-se nos resultados.</p>
-                </div>
-            </div>
             <br/>
             <br/>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="feature-icon">
-                        <i data-vi="newspaper" data-vi-primary="#60b6f4" data-vi-accent="#cfecff" data-vi-prop="#CEFAFF"></i>
-                        <h4>Diagnóstico e Recuperação Tributária</h4>
-                        <br/>
-                        <p>Base de DF-e (Documentos Fiscais Eletrônicos), com validade jurídica e eventos de correção, cancelamento e manifestação monitorados.</p>
-                        <a class="btn btn-block btn-secondary" href="diagnostico-e-recuperacao-tributaria.html">Saiba Mais</a>
+
+            <section id="industria">
+                <div class="container">
+                    <h2 class="section-title">Indústria:</h2>
+                    <br/>
+
+                    <div class="row mx-auto">
+                        <div class="col-md wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <p>Informações sobre a indústria</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-icon">
-                        <i data-vi="processor" data-vi-primary="#cfecff" data-vi-accent="#60b6f4" data-vi-prop="#CEFAFF"></i>
-                        <h4>Soluções Fiscais Tecnológicas e Avançadas</h4>
-                        <br/>
-                        <p>Ressarcimento, Complemento e Crédito de ICMS nas operações próprias e na condição de Substituto Tributário.</p>
-                        <br/>
-                        <a class="btn btn-block btn-secondary" href="platform.html">Saiba Mais</a>
+            </section>
+
+            <section id="comercio">
+                <div class="container">
+                    <h2 class="section-title">Comércio:</h2>
+                    <br/>
+
+                    <div class="row mx-auto">
+                        <div class="col-md wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <p>Informações sobre a comércio</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="feature-icon">
-                        <i data-vi="controller" data-vi-primary="#60b6f4" data-vi-accent="#cfecff" data-vi-prop="#CEFAFF"></i>
-                        <h4>Inovação Tecnológica e Incentivos</h4>
-                        <br/>
-                        <p>Monitoramento de notificações oficiais da administração pública Federal, Estadual e Municipal recebidas através do Domicílio tributário Eletrônico.</p>
-                        <a class="btn btn-block btn-secondary" href="inovacao-tecnologica-e-incentivos.html">Saiba Mais</a>
+            </section>
+
+
+            <section id="servico">
+                <div class="container">
+                    <h2 class="section-title">Serviço:</h2>
+                    <br/>
+
+                    <div class="row mx-auto">
+                        <div class="col-md wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <p>Informações sobre a serviço</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
+
+
+
         </div>
     </section>
 
-    <section id="brands">
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-3 text-center title-container">
-                    <h2 class="section-title">Confiança de quem aprovou:</h2>
-                    <p>+ de 1800 clientes aprovam os serviços e soluções que a Bookeepers Solutions proporciona.</p>
-                </div>
-            </div>
-            <div class="row">
-                <div id="owl-brands">
-                    <div class="item"><img src="imgs/brands/brand-1.png" class="img-fluid" alt="brand-1"></div>
-                    <div class="item"><img src="imgs/brands/brand-2.png" class="img-fluid" alt="brand-1"></div>
-                    <div class="item"><img src="imgs/brands/brand-3.png" class="img-fluid" alt="brand-3"></div>
-                    <div class="item"><img src="imgs/brands/brand-1.png" class="img-fluid" alt="brand-1"></div>
-                    <div class="item"><img src="imgs/brands/brand-2.png" class="img-fluid" alt="brand-2"></div>
-                    <div class="item"><img src="imgs/brands/brand-3.png" class="img-fluid" alt="brand-3"></div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- ==============================================
+    FOOTER
+    =============================================== -->
 
     <section id="contact">
         <div class="container">
-            <div class="row">
+            <div class="row mb-5">
                 <div class="col-xs-12 col-sm-8 col-md-8 col-sm-offset-2 col-md-offset-3 text-center title-container">
                     <h2 class="section-title">Entre em contato conosco:</h2>
-                    <p>Os melhores serviços fiscais com o melhor atendimento e suporte.</p>
+                    <a class="btn btn-secondary" href="https://bkps.com.br/contato/">CLIQUE AQUI</a>
                 </div>
             </div>
-
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-xs-12 col-sm-4">
-                        <label>Nome:</label>
-                        <input type="text" class="form-control" id="inputName4">
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-4">
-                        <label for="inputPassword4">E-mail:</label>
-                        <input type="email" class="form-control" id="inputPassword4">
-                    </div>
-                    <div class="form-group col-xs-12 col-sm-4">
-                        <label>Telefone:</label>
-                        <input type="text" class="form-control" id="inputPhone">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label>Assunto:</label>
-                    <input type="text" class="form-control" id="inputSubject">
-                </div>
-                <div class="form-group">
-                    <label>Mensagem:</label>
-                    <textarea id="form-message" cols="30" rows="5" class="form-control"></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
             <p>&copy; Bookeepers - Todos os direitos reservados - <span id="year"></span></p>
         </div>
     </section>
