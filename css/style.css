@@ -290,7 +290,22 @@ h4 {
 ========================================================*/
 
 #about {
-    padding: 120px 0;
+    padding: 90px 0;
+    text-align: center;
+}
+
+#industria {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#comercio {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#servico {
+    padding: 100px 0;
     text-align: center;
 }
 
