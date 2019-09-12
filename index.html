@@ -150,8 +150,9 @@
                                        onkeyup="formatMoney(this)" id="monthly_payroll" placeholder="R$ 100.000,00">
                             </div>
                         </div>
+                        <br>
                         <div class="form-row">
-                            <div class="form-group col-xs-12 col-sm-4 mx-auto mt-4">
+                            <div class="form-group col-xs-12 col-sm-4 mx-auto mt-5">
                                 <h4>Média de Recuperação:</h4>
                                 <input type="text" class="form-control text-center" readonly id="recovery_media" value="R$ 0,00">
                             </div>
@@ -162,53 +163,259 @@
                     </div>
                 </div>
             </div>
-
             <br/>
             <br/>
-
-            <section id="industria">
-                <div class="container">
-                    <h2 class="section-title">Indústria:</h2>
-                    <br/>
-
-                    <div class="row mx-auto">
-                        <div class="col-md wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
-                            <p>Informações sobre indústria</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="comercio">
-                <div class="container">
-                    <h2 class="section-title">Comércio:</h2>
-                    <br/>
-
-                    <div class="row mx-auto">
-                        <div class="col-md wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
-                            <p>Informações sobre comércio</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-            <section id="servico">
-                <div class="container">
-                    <h2 class="section-title">Serviço:</h2>
-                    <br/>
-
-                    <div class="row mx-auto">
-                        <div class="col-md wow fadeInUp" data-wow-duration=".5s" data-wow-delay=".2s">
-                            <p>Informações sobre serviço</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-
-
         </div>
+    </section>
+
+
+
+    <section id="all_sections">
+
+        <section id="industria">
+                <section id="prices">
+                    <div class="container">
+                        <div class="row">
+                            <!-- /// Title /// -->
+                            <div class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center mx-auto">
+                                <h2 class="section-title">Indústria</h2>
+                            </div>
+                        </div>
+                        <!-- /// Pricing Tables /// -->
+                        <div class="row">
+                            <!--// First Table // -->
+                            <div class="col-lg-4 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".2s">
+                                <div class="price-table">
+                                    <div class="header">
+                                        <h5 class="title">IRPJ/CSLL</h5>
+                                        <div class="price">0$</div>
+                                        <h4>Valor Estimado</h4>
+                                    </div>
+                                    <ul>
+                                        <li>PAT</li>
+                                        <li>Adições e exclusões</li>
+                                        <li>Retenções de IRPJ e CSLL</li>
+                                        <li>Perdas com clientes incobráveis</li>
+                                        <li>Juros sobre capital próprio</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// First Table // -->
+                            <div class="col-lg-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
+                                <div class="price-table">
+                                    <div class="header">
+                                        <h5 class="title">PIS/CONFINS</h5>
+                                        <div class="price">10$</div>
+                                        <h4>Valor Estimado</h4>
+                                    </div>
+                                    <ul>
+                                        <li>Revisão de créditos não-cumulativos</li>
+                                        <li>Análise do conceito de insumos</li>
+                                        <li>Análise de bens e serviços utilizados como insumos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// First Table // -->
+                            <div class="col-lg-4 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+                                <div class="price-table">
+                                    <div class="header">
+                                        <h5 class="title">INSS</h5>
+                                        <div class="price">50$</div>
+                                        <h4>Valor Estimado</h4>
+                                    </div>
+                                    <ul>
+                                        <li>RAT – Risco de Acidente de Trabalho</li>
+                                        <li>FAP – Fator Acidentário de Prevenção</li>
+                                        <li>Verbas Indenizatórias</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// Another one -->
+                            <div class="col-lg-4 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+                                <div class="price-table">
+                                    <div class="header">
+                                        <h5 class="title">ICMS</h5>
+                                        <div class="price">50$</div>
+                                        <h4>Valor Estimado</h4>
+                                    </div>
+                                    <ul>
+                                        <li>Sistemática de não-cumulatividade</li>
+                                        <li>Alíquotas incidentes</li>
+                                        <li>Operações interestaduais</li>
+                                        <li>Créditos presumidos</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// First Table // -->
+                            <div class="col-lg-4 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+                                <div class="price-table">
+                                    <div class="header">
+                                        <h5 class="title">IPI</h5>
+                                        <div class="price">50$</div>
+                                        <h4>Valor Estimado</h4>
+                                    </div>
+                                    <ul>
+                                        <li>Sistemática de não-cumulatividade</li>
+                                        <li>Revisão do cadastro de ncm</li>
+                                        <li>Créditos presumidos – aquisição de atacadista não contribuinte</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--// Another one -->
+                        </div>
+                    </div>
+                </section>
+        </section>
+
+        <section id="comercio">
+
+            <section id="prices">
+                <div class="container">
+                    <div class="row">
+                        <!-- /// Title /// -->
+                        <div class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center mx-auto">
+                            <h2 class="section-title">Comércio</h2>
+                        </div>
+                    </div>
+                    <!-- /// Pricing Tables /// -->
+                    <div class="row">
+                        <!--// First Table // -->
+                        <div class="col-lg-4 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <div class="price-table">
+                                <div class="header">
+                                    <h5 class="title">IRPJ/CSLL</h5>
+                                    <div class="price">0$</div>
+                                    <h4>Valor Estimado</h4>
+                                </div>
+                                <ul>
+                                    <li>PAT</li>
+                                    <li>Adições e exclusões</li>
+                                    <li>Retenções de IRPJ e CSLL</li>
+                                    <li>Perdas com clientes incobráveis</li>
+                                    <li>Juros sobre capital próprio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// First Table // -->
+                        <div class="col-lg-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
+                            <div class="price-table">
+                                <div class="header">
+                                    <h5 class="title">PIS/CONFINS</h5>
+                                    <div class="price">10$</div>
+                                    <h4>Valor Estimado</h4>
+                                </div>
+                                <ul>
+                                    <li>Revisão de créditos não-cumulativos</li>
+                                    <li>Análise do conceito de insumos</li>
+                                    <li>Análise de bens e serviços utilizados como insumos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// First Table // -->
+                        <div class="col-lg-4 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <div class="price-table">
+                                <div class="header">
+                                    <h5 class="title">INSS</h5>
+                                    <div class="price">50$</div>
+                                    <h4>Valor Estimado</h4>
+                                </div>
+                                <ul>
+                                    <li>RAT – Risco de Acidente de Trabalho</li>
+                                    <li>FAP – Fator Acidentário de Prevenção</li>
+                                    <li>Verbas Indenizatórias</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// Another one -->
+                        <div class="col-lg-4 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <div class="price-table">
+                                <div class="header">
+                                    <h5 class="title">ICMS</h5>
+                                    <div class="price">50$</div>
+                                    <h4>Valor Estimado</h4>
+                                </div>
+                                <ul>
+                                    <li>Sistemática de não-cumulatividade</li>
+                                    <li>Alíquotas incidentes</li>
+                                    <li>Operações interestaduais</li>
+                                    <li>Créditos presumidos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// Another one -->
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+
+        <section id="servico">
+
+            <section id="prices">
+                <div class="container">
+                    <div class="row">
+                        <!-- /// Title /// -->
+                        <div class="col-md-6 col-sm-offset-2 col-md-offset-3 text-center mx-auto">
+                            <h2 class="section-title">Serviço</h2>
+                        </div>
+                    </div>
+                    <!-- /// Pricing Tables /// -->
+                    <div class="row">
+                        <!--// First Table // -->
+                        <div class="col-lg-4 wow fadeInLeft" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <div class="price-table">
+                                <div class="header">
+                                    <h5 class="title">IRPJ/CSLL</h5>
+                                    <div class="price">0$</div>
+                                    <h4>Valor Estimado</h4>
+                                </div>
+                                <ul>
+                                    <li>PAT</li>
+                                    <li>Adições e exclusões</li>
+                                    <li>Retenções de IRPJ e CSLL</li>
+                                    <li>Perdas com clientes incobráveis</li>
+                                    <li>Juros sobre capital próprio</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// First Table // -->
+                        <div class="col-lg-4 wow bounceIn" data-wow-duration=".5s" data-wow-delay=".4s">
+                            <div class="price-table">
+                                <div class="header">
+                                    <h5 class="title">PIS/CONFINS</h5>
+                                    <div class="price">10$</div>
+                                    <h4>Valor Estimado</h4>
+                                </div>
+                                <ul>
+                                    <li>Revisão de créditos não-cumulativos</li>
+                                    <li>Análise do conceito de insumos</li>
+                                    <li>Análise de bens e serviços utilizados como insumos</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// First Table // -->
+                        <div class="col-lg-4 wow fadeInRight" data-wow-duration=".5s" data-wow-delay=".2s">
+                            <div class="price-table">
+                                <div class="header">
+                                    <h5 class="title">INSS</h5>
+                                    <div class="price">50$</div>
+                                    <h4>Valor Estimado</h4>
+                                </div>
+                                <ul>
+                                    <li>RAT – Risco de Acidente de Trabalho</li>
+                                    <li>FAP – Fator Acidentário de Prevenção</li>
+                                    <li>Verbas Indenizatórias</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--// Another one -->
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
     </section>
 
     <!-- ==============================================
