@@ -118,40 +118,42 @@
                         <div class="form-row">
                             <div class="form-group col-xs-12 col-sm-3">
                                 <label>Setor:</label>
-                                <select class="form-control">
-                                    <option value="" disabled selected>Selecione o setor</option>
-                                    <option value="1">Indústria</option>
-                                    <option value="2">Comércio</option>
-                                    <option value="3">Serviço</option>
+                                <select class="form-control calculation" id="sector">
+                                    <option value="0" disabled selected>Selecione o setor</option>
+                                    <option value="0.015">Indústria</option>
+                                    <option value="0.01">Comércio</option>
+                                    <option value="0.005">Serviço</option>
                                 </select>
                             </div>
                             <div class="form-group col-xs-12 col-sm-3">
                                 <label>Segmento:</label>
-                                <select class="form-control">
-                                    <option value="" disabled selected>Selecione o segmento</option>
+                                <select class="form-control calculation" id="segment">
+                                    <option value="0" disabled selected>Selecione o segmento</option>
                                     <option value="1">Agribusiness</option>
-                                    <option value="2">Construção Civil</option>
-                                    <option value="3">Health</option>
-                                    <option value="4">Educação</option>
-                                    <option value="5">Logística e Transportes</option>
-                                    <option value="6">Alimentos e Bebidas</option>
-                                    <option value="7">Serviços Financeiros</option>
-                                    <option value="8">Shoppings</option>
+                                    <option value="0">Construção Civil</option>
+                                    <option value="0.5">Health</option>
+                                    <option value="0.5">Educação</option>
+                                    <option value="1">Logística e Transportes</option>
+                                    <option value="1">Alimentos e Bebidas</option>
+                                    <option value="0.5">Serviços Financeiros</option>
+                                    <option value="0.5">Shoppings</option>
                                 </select>
                             </div>
                             <div class="form-group col-xs-12 col-sm-3">
                                 <label>Faturamento Anual:</label>
-                                <input type="text" class="form-control text-center" id="inputName4" placeholder="R$ 100.000.000,00">
+                                <input type="text" class="form-control text-center calculation"
+                                       onkeyup="formatMoney(this)" id="annual_billing" placeholder="R$ 100.000.000,00">
                             </div>
                             <div class="form-group col-xs-12 col-sm-3">
                                 <label>Folha de Pagamento Mensal:</label>
-                                <input type="text" class="form-control text-center" id="inputName4" placeholder="R$ 100.000,00">
+                                <input type="text" class="form-control text-center calculation"
+                                       onkeyup="formatMoney(this)" id="monthly_payroll" placeholder="R$ 100.000,00">
                             </div>
                         </div>
                         <div class="form-row">
                             <div class="form-group col-xs-12 col-sm-4 mx-auto mt-4">
                                 <h4>Média de Recuperação:</h4>
-                                <input type="text" class="form-control text-center" id="inputName4" placeholder="R$ 000.000.000,00">
+                                <input type="text" class="form-control text-center" readonly id="recovery_media" value="R$ 0,00">
                             </div>
                         </div>
                     </form>
@@ -249,6 +251,8 @@
     <script src="js/plugins/jquery.easing.min.js"></script>
     <!-- Main JS -->
     <script src="js/main.js"></script>
+    <!-- Calculation-->
+    <script src="js/calculation.js"></script>
 
 </body>
 
