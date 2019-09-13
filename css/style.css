@@ -418,7 +418,7 @@ h4 {
 }
 
 .section-prices .price-table .header .price {
-    font-size: 60px;
+    font-size: 30px !important;
     color: #000;
     font-weight: 700;
 }
