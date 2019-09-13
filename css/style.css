@@ -299,17 +299,17 @@ h4 {
     text-align: center;
 }
 
-#industria {
+#industry {
     padding: 100px 0;
     text-align: center;
 }
 
-#comercio {
+#commerce {
     padding: 100px 0;
     text-align: center;
 }
 
-#servico {
+#service {
     padding: 100px 0;
     text-align: center;
 }
@@ -399,7 +399,7 @@ h4 {
     text-align: center;
 }
 
-#prices .price-table {
+.section-prices .price-table {
     background: #fff;
     color: #686b75;
     transition: all .2s ease-in-out;
@@ -408,36 +408,36 @@ h4 {
     margin: 30px 0;
 }
 
-#prices .price-table .header {
+.section-prices .price-table .header {
     margin-bottom: 30px;
 }
 
-#prices .price-table .header .title {
+.section-prices .price-table .header .title {
     color: #068BEA;
     font-weight: 500;
 }
 
-#prices .price-table .header .price {
+.section-prices .price-table .header .price {
     font-size: 60px;
     color: #000;
     font-weight: 700;
 }
 
-#prices .price-table .header h4 {
+.section-prices .price-table .header h4 {
     font-weight: 700;
 }
 
-#prices .price-table ul {
+.section-prices .price-table ul {
     list-style: none;
     padding: 0;
     margin: 15px 0;
 }
 
-#prices .price-table .btn {
+.section-prices .price-table .btn {
     margin-top: 30px;
 }
 
-#prices .price-table:hover {
+.section-prices .price-table:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
     transform: translateY(-3px);
 }
@@ -822,4 +822,12 @@ h4 {
     #video-popup .video-box .waves-block {
         display: none;
     }
+}
+
+/*=======================================================
+			SHOW SECTION SECTOR:
+========================================================*/
+
+.section-sector {
+    display: none;
 }

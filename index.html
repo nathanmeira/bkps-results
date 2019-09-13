@@ -77,15 +77,6 @@
                             <a class="nav-link page-scroll" href="#home">Início</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#industria">Indústria</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#comercio">Comércio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link page-scroll" href="#servico">Serviço</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link page-scroll" href="#contact">Contato</a>
                         </li>
                     </ul>
@@ -120,9 +111,9 @@
                                 <label>Setor:</label>
                                 <select class="form-control calculation" id="sector">
                                     <option value="0" disabled selected>Selecione o setor</option>
-                                    <option value="0.015">Indústria</option>
-                                    <option value="0.01">Comércio</option>
-                                    <option value="0.005">Serviço</option>
+                                    <option value="industry">Indústria</option>
+                                    <option value="commerce">Comércio</option>
+                                    <option value="service">Serviço</option>
                                 </select>
                             </div>
                             <div class="form-group col-xs-12 col-sm-3">
@@ -172,8 +163,8 @@
 
     <section id="all_sections">
 
-        <section id="industria">
-                <section id="prices">
+        <section id="industry" class="section-sector">
+                <section class="section-prices">
                     <div class="container">
                         <div class="row">
                             <!-- /// Title /// -->
@@ -188,7 +179,7 @@
                                 <div class="price-table">
                                     <div class="header">
                                         <h5 class="title">IRPJ/CSLL</h5>
-                                        <div class="price">0$</div>
+                                        <div class="price" id="industry_irpj_csll">0$</div>
                                         <h4>Valor Estimado</h4>
                                     </div>
                                     <ul>
@@ -205,7 +196,7 @@
                                 <div class="price-table">
                                     <div class="header">
                                         <h5 class="title">PIS/CONFINS</h5>
-                                        <div class="price">10$</div>
+                                        <div class="price" id="industry_pis_confins">10$</div>
                                         <h4>Valor Estimado</h4>
                                     </div>
                                     <ul>
@@ -220,7 +211,7 @@
                                 <div class="price-table">
                                     <div class="header">
                                         <h5 class="title">INSS</h5>
-                                        <div class="price">50$</div>
+                                        <div class="price" id="industry_inss">50$</div>
                                         <h4>Valor Estimado</h4>
                                     </div>
                                     <ul>
@@ -235,7 +226,7 @@
                                 <div class="price-table">
                                     <div class="header">
                                         <h5 class="title">ICMS</h5>
-                                        <div class="price">50$</div>
+                                        <div class="price" id="industry_icms">50$</div>
                                         <h4>Valor Estimado</h4>
                                     </div>
                                     <ul>
@@ -251,7 +242,7 @@
                                 <div class="price-table">
                                     <div class="header">
                                         <h5 class="title">IPI</h5>
-                                        <div class="price">50$</div>
+                                        <div class="price" id="industry_ipi">50$</div>
                                         <h4>Valor Estimado</h4>
                                     </div>
                                     <ul>
@@ -267,9 +258,9 @@
                 </section>
         </section>
 
-        <section id="comercio">
+        <section id="commerce" class="section-sector">
 
-            <section id="prices">
+            <section class="section-prices">
                 <div class="container">
                     <div class="row">
                         <!-- /// Title /// -->
@@ -284,7 +275,7 @@
                             <div class="price-table">
                                 <div class="header">
                                     <h5 class="title">IRPJ/CSLL</h5>
-                                    <div class="price">0$</div>
+                                    <div class="price" id="commerce_irpj_csll">0$</div>
                                     <h4>Valor Estimado</h4>
                                 </div>
                                 <ul>
@@ -301,7 +292,7 @@
                             <div class="price-table">
                                 <div class="header">
                                     <h5 class="title">PIS/CONFINS</h5>
-                                    <div class="price">10$</div>
+                                    <div class="price" id="commerce_pis_confins">10$</div>
                                     <h4>Valor Estimado</h4>
                                 </div>
                                 <ul>
@@ -316,7 +307,7 @@
                             <div class="price-table">
                                 <div class="header">
                                     <h5 class="title">INSS</h5>
-                                    <div class="price">50$</div>
+                                    <div class="price" id="commerce_inss">50$</div>
                                     <h4>Valor Estimado</h4>
                                 </div>
                                 <ul>
@@ -331,7 +322,7 @@
                             <div class="price-table">
                                 <div class="header">
                                     <h5 class="title">ICMS</h5>
-                                    <div class="price">50$</div>
+                                    <div class="price" id="commerce_icms">50$</div>
                                     <h4>Valor Estimado</h4>
                                 </div>
                                 <ul>
@@ -349,10 +340,9 @@
 
         </section>
 
+        <section id="service" class="section-sector">
 
-        <section id="servico">
-
-            <section id="prices">
+            <section class="section-prices">
                 <div class="container">
                     <div class="row">
                         <!-- /// Title /// -->
@@ -367,7 +357,7 @@
                             <div class="price-table">
                                 <div class="header">
                                     <h5 class="title">IRPJ/CSLL</h5>
-                                    <div class="price">0$</div>
+                                    <div class="price" id="service_irpj_csll">0$</div>
                                     <h4>Valor Estimado</h4>
                                 </div>
                                 <ul>
@@ -384,7 +374,7 @@
                             <div class="price-table">
                                 <div class="header">
                                     <h5 class="title">PIS/CONFINS</h5>
-                                    <div class="price">10$</div>
+                                    <div class="price" id="service_pis_confins">10$</div>
                                     <h4>Valor Estimado</h4>
                                 </div>
                                 <ul>
@@ -399,7 +389,7 @@
                             <div class="price-table">
                                 <div class="header">
                                     <h5 class="title">INSS</h5>
-                                    <div class="price">50$</div>
+                                    <div class="price" id="service_inss">50$</div>
                                     <h4>Valor Estimado</h4>
                                 </div>
                                 <ul>
